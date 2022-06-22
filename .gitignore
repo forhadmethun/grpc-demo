@@ -1,0 +1,13 @@
+/.idea/
+/grpc-client/.gradle/
+/grpc-client/.idea/
+/grpc-client/build/
+/grpc-client/out/
+/grpc-client/grpc-client.iml
+/grpc-rest-server/.gradle/
+/grpc-rest-server/.idea/
+/grpc-rest-server/build/
+/grpc-rest-server/out/
+/grpc-rest-server/grpc-rest-server.iml
+/grpc-rest-server/HELP.md
+/grpc-client/HELP.md

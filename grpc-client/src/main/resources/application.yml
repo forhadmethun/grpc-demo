@@ -1,0 +1,12 @@
+server:
+    port: 9000
+    compression.enabled: true
+    max-http-header-size: 20000
+
+grpc:
+    client:
+        grpc-server:
+            address: 'static://127.0.0.1:10001'
+            enableKeepAlive: true
+            keepAliveWithoutCalls: true
+            negotiationType: plaintext

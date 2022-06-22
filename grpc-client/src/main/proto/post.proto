@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.fm.grpcrest.model";
+option java_outer_classname = "PostGrpcApi";
+
+package sms.core;
+
+message PostRequest {
+    int64 userId = 1;
+    string title = 2;
+    string body = 3;
+}
+
+message PostFindRequest {
+    string id = 1;
+}
+
+message PostResponse {
+    int64 id = 1;
+    int64 userId = 2;
+    string title = 3;
+    string body = 4;
+}
+
+service PostService {
+    rpc create (PostRequest) returns (PostResponse);
+    rpc find (PostFindRequest) returns (PostResponse);
+}
